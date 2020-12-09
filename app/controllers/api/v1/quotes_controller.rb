@@ -7,6 +7,9 @@ class Api::V1::QuotesController < ApplicationController
         render json: QuoteSerializer.new(quotes, options)
     end
 
+    def show
+    end
+
     def create
         quote = Quote.new(quote_params)
         if quote.save
