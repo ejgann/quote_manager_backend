@@ -3,7 +3,6 @@ class Api::V1::ProjectsController < ApplicationController
     def index
         projects = Project.all
         render json: projects
-
     end
 
     def show
@@ -14,7 +13,6 @@ class Api::V1::ProjectsController < ApplicationController
 
     def project_params
         params.require(:project).permit(:name, :budget)
-
     end
 
 
