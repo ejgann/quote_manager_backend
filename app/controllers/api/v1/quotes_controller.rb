@@ -8,6 +8,8 @@ class Api::V1::QuotesController < ApplicationController
     end
 
     def show
+        quote = Quote.find_by(id: params[:id])
+        render json: QuoteSerializer.new(quote)
     end
 
     def create
