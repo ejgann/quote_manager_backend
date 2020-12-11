@@ -24,6 +24,6 @@ class Api::V1::QuotesController < ApplicationController
     private
 
     def quote_params
-        params.require(:quote).permit(:company, :website, :in_budget, :quote_amount, :project_id)
+        params.require(:quote).permit(:company, :website, :quote_amount, :project_id)
     end
 end
