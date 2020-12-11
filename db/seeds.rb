@@ -13,6 +13,8 @@ Quote.destroy_all
 # PROJECT SEED DATA
 lawn = Project.create(name: "Lawn Care", budget: 500)
 kitchen = Project.create(name: "Kitchen Renovation", budget: 25000)
+general = Project.create(name: "General Contracting", budget: 20000)
+hvac = Project.create(name: "HVAC", budget: 6000)
 
 # QUOTE SEED DATA
 abc = Quote.create(company: "ABC Contracting", website: "abc", quote_amount: 20000, project_id: kitchen.id)
