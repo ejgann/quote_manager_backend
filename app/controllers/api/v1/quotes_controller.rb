@@ -2,7 +2,7 @@ class Api::V1::QuotesController < ApplicationController
     def index
         quotes = Quote.all
         options = {
-            include: [:project]
+            include: ['project', 'project.name', 'project.budget']
         }
         render json: QuoteSerializer.new(quotes, options)
     end
