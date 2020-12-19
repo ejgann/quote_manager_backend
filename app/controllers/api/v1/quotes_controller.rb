@@ -22,7 +22,8 @@ class Api::V1::QuotesController < ApplicationController
     end
 
     def destroy
-        quote = Quote.find_by(id: params[:id]).destroy
+        quote = Quote.find_by(id: params[:id])
+        quote.destroy
     end
 
     private
