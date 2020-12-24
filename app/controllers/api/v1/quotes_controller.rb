@@ -7,11 +7,6 @@ class Api::V1::QuotesController < ApplicationController
         render json: QuoteSerializer.new(quotes, options)
     end
 
-    def show
-        quote = Quote.find_by(id: params[:id])
-        render json: QuoteSerializer.new(quote)
-    end
-
     def create
         quote = Quote.new(quote_params)
         if quote.save
@@ -19,11 +14,6 @@ class Api::V1::QuotesController < ApplicationController
         else
             render json: {errors: quote.errors.full_messages }, status: :unprocessible_entity
         end
-    end
-
-    def destroy
-        quote = Quote.find_by(id: params[:id])
-        quote.destroy
     end
 
     private
