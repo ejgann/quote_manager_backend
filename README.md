@@ -34,8 +34,12 @@ Check it out: [Frontend Repo](https://github.com/ejgann/quote_manager_frontend) 
 * Run `open index.html`
 
 ## Features
-![gif title](app/quote_manager.gif)
 * A user can view a table containing all of the quotes they have accumulated for all household projects
 * Upon receiving a new project quote, the user can add that information as a new quote
 * The user can toggle a list of their current projects, including the alotted budget for each
 
+## Challenges
+My biggest challenge with this project was having disproportionately involved ideas for the project based on my available time and know-how at the time. I wanted to build and incorporate other features using JavaScript, such as a toggled accordion to show and hide the user's current list of projects. However, when I tried it, the accordion overlapped into the table at the bottom. I ran out of time to try to figure that out but plan to revisit it in the future.
+
+## Future Implementations
+As just mentioned, I'd like to build out some other features using JavaScript, such as an accordion that can be toggled open or closed to show/hide the user's current projects. I would also like to add features to flag quotes that are within the user's alotted budget in the active quotes table and to edit/delete quotes.
